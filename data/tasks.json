@@ -291,7 +291,8 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-03-31T11:33:51.100Z",
-      "status": "backlog"
+      "status": "in_progress",
+      "sortOrder": 0
     }
   ],
   "projects": [
@@ -309,6 +310,14 @@
     }
   ],
   "activities": [
+    {
+      "type": "moved",
+      "actor": "zjianhua031616-bot",
+      "task": "测试 Agent 协作",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
     {
       "type": "moved",
       "actor": "zjianhua031616-bot",
@@ -426,5 +435,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-03-31T11:33:51.100Z"
+  "lastUpdated": "2026-03-31T11:34:11.270Z"
 }
