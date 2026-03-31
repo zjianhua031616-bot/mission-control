@@ -277,7 +277,8 @@
       ],
       "priority": "low",
       "comments": [],
-      "createdAt": "2026-01-01T00:00:02Z"
+      "createdAt": "2026-01-01T00:00:02Z",
+      "sortOrder": 0
     },
     {
       "id": "task_1774955672480",
@@ -290,7 +291,7 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-03-31T11:14:32.480Z",
-      "status": "in_progress",
+      "status": "backlog",
       "sortOrder": 0
     }
   ],
@@ -313,6 +314,14 @@
       "type": "moved",
       "actor": "zjianhua031616-bot",
       "task": "测试Agent协作",
+      "from": "in_progress",
+      "to": "backlog",
+      "time": "just now"
+    },
+    {
+      "type": "moved",
+      "actor": "zjianhua031616-bot",
+      "task": "测试Agent协作",
       "from": "backlog",
       "to": "in_progress",
       "time": "just now"
@@ -330,5 +339,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-03-31T11:14:35.428Z"
+  "lastUpdated": "2026-03-31T11:15:45.715Z"
 }
