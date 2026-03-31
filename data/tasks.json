@@ -279,6 +279,19 @@
       "comments": [],
       "createdAt": "2026-01-01T00:00:02Z",
       "sortOrder": 0
+    },
+    {
+      "id": "task_1774956181555",
+      "title": "测试 Agent 协作",
+      "description": "请帮我整理一下今天的待办事项",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-03-31T11:23:01.555Z",
+      "status": "backlog"
     }
   ],
   "projects": [
@@ -357,5 +370,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-03-31T11:22:24.936Z"
+  "lastUpdated": "2026-03-31T11:23:01.556Z"
 }
