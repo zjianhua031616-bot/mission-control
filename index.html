@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<title>Mission Control</title>
-<style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-    h1 { color: #333; }
-</style>
+    <meta charset="UTF-8">
+    <title>Mission Control 面板</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+        body{background:#1a1d24;color:#fff;padding:30px}
+        .container{max-width:1200px;margin:0 auto}
+        .title{font-size:28px;margin-bottom:30px;color:#00c6ff}
+        .card{background:#242832;padding:20px;border-radius:10px;margin-bottom:20px}
+        .card h3{color:#61dafb;margin-bottom:10px}
+        pre{background:#161a23;padding:15px;border-radius:8px;overflow-x:auto;color:#dcdcaa}
+    </style>
 </head>
 <body>
-    <h1>🚀 Mission Control 运行中</h1>
-    <p>你的 GitHub Pages 已经部署成功！</p>
+    <div class="container">
+        <h1 class="title">🚀 Mission Control 控制面板</h1>
+
+        <div class="card">
+            <h3>📋 tasks.json</h3>
+            <pre id="tasks"></pre>
+        </div>
+
+        <div class="card">
+            <h3>🔁 crons.json</h3>
+            <pre id="crons"></pre>
+        </div>
+
+        <div class="card">
+            <h3>ℹ️ version.json</h3>
+            <pre id="version"></pre>
+        </div>
+    </div>
+
+    <script>
+        async function loadJSON(file, id) {
+            const res = await fetch(file);
+            const data = await res.json();
+            document.getElementById(id).textContent = JSON.stringify(data, null, 2);
+        }
+
+        loadJSON("tasks.json", "tasks");
+        loadJSON("crons.json", "crons");
+        loadJSON("version.json", "version");
+    </script>
 </body>
 </html>
