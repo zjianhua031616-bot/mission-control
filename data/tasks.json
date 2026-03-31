@@ -290,7 +290,8 @@
       "subtasks": [],
       "priority": "medium",
       "createdAt": "2026-03-31T11:14:32.480Z",
-      "status": "backlog"
+      "status": "in_progress",
+      "sortOrder": 0
     }
   ],
   "projects": [
@@ -309,6 +310,14 @@
   ],
   "activities": [
     {
+      "type": "moved",
+      "actor": "zjianhua031616-bot",
+      "task": "测试Agent协作",
+      "from": "backlog",
+      "to": "in_progress",
+      "time": "just now"
+    },
+    {
       "type": "created",
       "actor": "Mission Control",
       "task": "Onboarding Guide",
@@ -321,5 +330,5 @@
       "time": "just now"
     }
   ],
-  "lastUpdated": "2026-03-31T11:14:32.480Z"
+  "lastUpdated": "2026-03-31T11:14:35.428Z"
 }
